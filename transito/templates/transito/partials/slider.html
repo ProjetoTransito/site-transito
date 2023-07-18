@@ -1,0 +1,85 @@
+<!--SLIDER-->
+
+<div class="slider">
+    <!--RADIO BUTTONS-->
+    <div class="slides">
+        <input class="inp-radio" type="radio" name="radio-btn" id="radio1">
+        <input class="inp-radio" type="radio" name="radio-btn" id="radio2">
+        <input class="inp-radio" type="radio" name="radio-btn" id="radio3">
+        <input class="inp-radio" type="radio" name="radio-btn" id="radio4">
+    
+    <!--FIM RADIO BUTTONS-->
+
+    <!--SLIDERS-->
+        <div class="slide first">
+            <img class="img-car" src="/imagen/cor01.png" alt="Imagem1">
+        </div>
+
+        <div class="slide">
+            <img class="img-car" src="/imagen/cor02.png" alt="Imagem2">
+        </div>
+
+        <div class="slide">
+            <img class="img-car" src="/imagen/cor03.png" alt="Imagem3">
+        </div>
+
+        <div class="slide">
+            <img class="img-car" src="/imagen/cor04.png" alt="Imagem4">
+        </div>
+
+    <!--FINAL SLIDERS-->
+    <!--NAVIGATION AUTO-->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+
+    </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    
+</div>
+
+
+<script>
+const toogleBtn = document.querySelector('.toogle-btn')
+const toogleBtnIcon = document.querySelector('.toogle-btn i')
+const dropDownMenu = document.querySelector('#container-dropdown')
+
+toogleBtn.onclick = function(){
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toogleBtnIcon.classList = isOpen
+    ?"fa-solid fa-xmark"
+    :"fa-solid fa-bars"
+}
+
+/* FUNÇÃO AUTOMÁTICA SLIDER*/
+let count = 1;
+
+document.getElementById("radio1").checked = true;
+
+setInterval(function(){
+    nextImage();
+}, 5000)
+
+function nextImage() {
+    count ++;
+    if (count > 4){
+        count = 1;
+    }
+
+    document.getElementById("radio"+count).checked = true
+}
+
+</script>
+
+
