@@ -1,0 +1,39 @@
+{% include 'transito\partials\head.html' %}
+
+<body>
+    <h1>Contato</h1>
+    <section class="container-contato">
+
+        <h3>Preencha o formulário abaixo e envie sua mensagem:</h3>
+
+            <div class="container-input">
+
+                <div class="lbl-inp">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text">
+                </div>
+                
+                <div class="lbl-inp">
+                    <label for="email">E-mail:</label>
+                    <input type="text">
+                </div>
+            
+                <div class="lbl-inp">
+                    <label for="fone">Telefone:</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Digite seu texto aqui..."></textarea>
+            <div class="container-btn">
+                <button class="btn-sub" type="submit">ENVIAR</button>
+                <button class="btn-res" type="reset">LIMPAR</button>
+            </div>
+    </section>
+
+   
+
+    {% include 'transito\partials\footer.html' %}
+
+</body>
