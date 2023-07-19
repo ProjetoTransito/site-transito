@@ -3,6 +3,6 @@ from transito.views import home, contato
 
 
 urlpatterns = [
-    path('', home),
-    path('contato/', contato),
+    path('transito/', home),
+    path('transito/contato/', contato),
 ]
