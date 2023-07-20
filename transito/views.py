@@ -10,3 +10,7 @@ def home(request):
 
 def contato(request):
     return render(request, 'transito/pages/contato.html')
+
+
+def sobre(request):
+    return render(request, 'transito/pages/sobre.html')
