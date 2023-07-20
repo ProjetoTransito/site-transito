@@ -14,3 +14,7 @@ def contato(request):
 
 def sobre(request):
     return render(request, 'transito/pages/sobre.html')
+
+
+def servicos(request):
+    return render(request, 'transito/pages/servicos.html')
