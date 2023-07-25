@@ -26,10 +26,10 @@
 
         <nav id="container-cabecalho">
         <ul id="lista-cabecalho">
-            <li id="item-cabecalho"><a id="link-cabecalho" href="">HOME</a></li>
-            <li id="item-cabecalho"><a id="link-cabecalho" href="/sobre/sobre.html">SOBRE</a></li>
-            <li id="item-cabecalho"><a id="link-cabecalho" href="/servicos/servicos.html">SERVIÇOS ONLINE</a></li>
-            <li id="item-cabecalho"><a id="link-cabecalho" href="/contato/contato.html">CONTATO</a></li>
+            <li id="item-cabecalho"><a id="link-cabecalho"href="{% url 'home' %}">HOME</a></li>
+            <li id="item-cabecalho"><a id="link-cabecalho"href="{% url 'sobre' %}">SOBRE</a></li>
+            <li id="item-cabecalho"><a id="link-cabecalho"href="{% url 'servicos' %}">SERVIÇOS ONLINE</a></li>
+            <li id="item-cabecalho"><a id="link-cabecalho"href="{% url 'contato' %}">CONTATO</a></li>
         </ul>
         </nav>
 
@@ -39,10 +39,10 @@
 
         <nav id="container-dropdown">
             <ul id="lista-dropdown">
-                <li id="item-dropdown"><a id="link-dropdown" href="">HOME</a></li>
-                <li id="item-dropdown"><a id="link-dropdown" href="">SOBRE</a></li>
-                <li id="item-dropdown"><a id="link-dropdown" href="">SERVIÇOS ONLINE</a></li>
-                <li id="item-dropdown"><a id="link-dropdown" href="">CONTATO</a></li>
+                <li id="item-dropdown"><a id="link-dropdown" href="{% url 'home' %}">HOME</a></li>
+                <li id="item-dropdown"><a id="link-dropdown" href="{% url 'sobre' %}">SOBRE</a></li>
+                <li id="item-dropdown"><a id="link-dropdown" href="{% url 'servicos' %}">SERVIÇOS ONLINE</a></li>
+                <li id="item-dropdown"><a id="link-dropdown" href="{% url 'contato' %}">CONTATO</a></li>
             </ul>
         </nav>
 
