@@ -1,0 +1,45 @@
+/*SOBRE*/
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem 18rem;
+}
+#sobre-content {
+    border: 1px solid #1A1A1B;
+    margin: 2rem auto;
+    width: 70%;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+}
+
+.txtparagrafo {
+    margin-bottom: 1rem;
+}
+
+#lista-funcao {
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+}
+.funcao-dep {
+    margin-bottom: 1rem;
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: #1A1A1B;
+    height: 70px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#cont-coordenadoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

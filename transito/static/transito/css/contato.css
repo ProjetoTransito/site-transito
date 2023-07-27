@@ -1,0 +1,87 @@
+/*CONTATO*/
+
+h1 {
+    margin: 1rem 18rem;
+    font-family: 'Roboto',sans-serif;
+}
+
+h3 {
+    
+    font-size: 1.5rem;
+    font-family: 'Roboto',sans-serif;
+}
+
+.container-contato {
+    margin: 1rem auto 3rem;
+    border: 2px solid #1A1A1B;
+    border-radius: 5px;
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto',sans-serif;
+}
+
+.container-input {
+    display: flex;
+    gap: 40px;
+}
+
+.lbl-inp {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2rem
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-indent: 20px;
+    
+}
+
+textarea {
+    width: 100%;
+    font-size: 1rem;
+    text-indent: 20px;
+    font-size: 1.2rem;
+    border-radius: 5PX;
+    resize: vertical;
+    margin-bottom: 20px;
+    font-family: 'Roboto',sans-serif;
+}
+
+button {
+    padding: 10px;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
+}
+
+.btn-sub {
+    margin-right: 20px;
+    background-color: #FFB41F;
+    border: 3px solid transparent;
+}
+
+.btn-res {
+    background-color: #CCCCCC;
+    border: 3px solid transparent;
+}
+
+.btn-sub:hover {
+    border: 3px solid #1A1A1B;
+    }
+
+.btn-res:hover {
+border: 3px solid #1A1A1B;
+}
+
+/*FIM CONTATO*/
