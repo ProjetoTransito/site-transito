@@ -1,0 +1,81 @@
+{% include 'transito\partials\head.html' %}
+
+<body>
+
+    <h1>Indicação do Condutor</h1>
+
+<div class="container-condutor">
+    <p class="txt-condutor">
+        Caso não seja o infrator ou sendo o veículo de Pessoa Jurídica, preencha o formulário da Notificação da Autuação recebida, e encaminhe ao Setor de Trânsito no prazo estabelecido, com as assinaturas originais do condutor e do proprietário do veículo, acompanhadas de cópia de documento de identidade e CNH do Condutor/Infrator com categoria compatível com o veículo.
+    </p>
+
+    <p class="txt-condutor">Em caso de não preenchimento, ou por falta de documentação, o proprietário do veículo será considerado o responsável pela infração.</p>
+
+    <p class="txt-condutor">Sendo o Proprietário do veículo pessoa jurídica e não havendo a identificação do Condutor/Infrator, será imposta outra multa, nos termos do §7º e §8º do Art. 257 do CTB, expedindo-se a notificação de penalidade desta ao proprietário do veículo (Artigo 4º da Resolução CONTRAN nº 710/2017 e 619/2016).</p>
+
+    <p class="txt-condutor">Em caso de dúvida entre em contato pelo e-mail:<strong> nucleodetransito@leme.sp.gov.br</p></strong>
+
+    <p class="cont-txt-cond"><strong>Link para Indicação de condutor:</strong></p>
+    <div class="cont-link">
+        <a class="link-condutor" href="">Clique aqui.</a>
+    </div>
+
+</div>
+
+    <h1>Formulário de Recurso</h1>
+
+<div class="container-recurso">
+    <h2>Documentos necessários:</h2>
+    <ul class="lista-doc">
+        <li class="item-doc"> Requerimento preenchido, datado e assinado.</li>
+        <li class="item-doc">Cópia da notificação da multa.</li>
+        <li class="item-doc">Cópia do CRLV ou CRV (documento do veículo).</li>
+        <li class="item-doc">Cópia da CNH (carteira nacional de habilitação) do condutor/infrator ou outro documento equivalente (pessoa física)</li>
+        <li class="item-doc">Cópia do contrato social/documento equivalente (pessoa jurídica).</li>
+        <li class="item-doc">Procuração com firma reconhecida em cartório, quando representado por terceiro.</li>
+    </ul>
+
+    <p class="txt-recurso"> Após o preenchimento realizar o protocolo junto à PREFEITURA, de segunda à sexta-feira, ou encaminhar para o email:<strong> nucleodetransito@leme.sp.gov.br</strong></p>
+
+    <p class="cont-txt-cond"><strong> Link para Recurso:</strong></p>
+    <div class="cont-link">
+        <a class="link-condutor" href="">Clique aqui.</a>
+    </div>
+</div>
+
+<h1>Formulário cópia de AIT</h1>
+
+<div class="container-ait">
+    <h2>Documentos necessários:</h2>
+    <ul class="lista-doc">
+        <li class="item-doc">Requerimento preenchido e assinado solicitando a microfilmagem de multas.</li>
+        <li class="item-doc">Notificação da Multa original ou cópia da notificação da multa do órgão municipal de trânsito de Leme/SP</li>
+        <li class="item-doc">Documento identificação cópia de documento de identificação pessoal do proprietário do veículo ou conduto</li>
+        <li class="item-doc">CRLV cópia do Certificado de Registro e Licenciamento de Veículo.</li>
+    </ul>
+
+    <p class="ait">Após o preenchimento encaminhar juntamente com os documentos digitalizados para o email:<strong> nucleodetransito@leme.sp.gov.br</strong></p>
+
+    <p class="cont-txt-cond"><strong> Link para Formulário AIT:</strong></p>
+    <div class="cont-link">
+        <a class="link-condutor" href="">Clique aqui.</a>
+    </div>
+</div>
+{% include 'transito\partials\footer.html' %}
+
+<script>
+    const toogleBtn = document.querySelector('.toogle-btn')
+const toogleBtnIcon = document.querySelector('.toogle-btn i')
+const dropDownMenu = document.querySelector('#container-dropdown')
+
+toogleBtn.onclick = function(){
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toogleBtnIcon.classList = isOpen
+    ?"fa-solid fa-xmark"
+    :"fa-solid fa-bars"
+}
+</script>
+
+</body>

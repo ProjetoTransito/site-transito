@@ -18,3 +18,7 @@ def sobre(request):
 
 def servicos(request):
     return render(request, 'transito/pages/servicos.html')
+
+
+def multas(request):
+    return render(request, 'transito/pages/multas.html')
