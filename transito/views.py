@@ -22,3 +22,7 @@ def servicos(request):
 
 def multas(request):
     return render(request, 'transito/pages/multas.html')
+
+
+def bicicletas(request):
+    return render(request, 'transito/pages/bicicletas.html')
