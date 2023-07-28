@@ -34,3 +34,7 @@ def zona_azul(request):
 
 def interd(request):
     return render(request, 'transito/pages/interd.html')
+
+
+def lombadas(request):
+    return render(request, 'transito/pages/lombadas.html')
