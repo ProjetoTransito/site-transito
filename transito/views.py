@@ -26,3 +26,7 @@ def multas(request):
 
 def bicicletas(request):
     return render(request, 'transito/pages/bicicletas.html')
+
+
+def zona_azul(request):
+    return render(request, 'transito/pages/zona_azul.html')
