@@ -30,3 +30,7 @@ def bicicletas(request):
 
 def zona_azul(request):
     return render(request, 'transito/pages/zona_azul.html')
+
+
+def interd(request):
+    return render(request, 'transito/pages/interd.html')

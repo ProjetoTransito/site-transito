@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-interdicao {
+    border: 1px solid #1A1A1B;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.txt-int-interd{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#int-link{
+    text-decoration: none;
+    color: #1A1A1B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    background-color: #ffc118;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, .5);
+    border: 3px solid transparent;
+}
+
+.txt-interd-requerimento {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.txt-int {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
