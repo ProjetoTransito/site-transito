@@ -38,3 +38,7 @@ def interd(request):
 
 def lombadas(request):
     return render(request, 'transito/pages/lombadas.html')
+
+
+def sinalizacao(request):
+    return render(request, 'transito/pages/sinalizacao.html')

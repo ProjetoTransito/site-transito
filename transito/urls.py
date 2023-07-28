@@ -12,4 +12,5 @@ urlpatterns = [
     path('zona_azul/', views.zona_azul, name='zona_azul'),
     path('interd/', views.interd, name='interd'),
     path('lombadas/', views.lombadas, name='lombadas'),
+    path('sinalizacao/', views.sinalizacao, name='sinalizacao'),
 ]
