@@ -1,0 +1,260 @@
+<!--CARTÃO IDOSO-->
+
+<h1>Cartão do Idoso</h1>
+<p class="p-info">Preencha o formulário, e assim que o cartão estiver pronto, será feito contato para agendamento da retirada do cartão.</p>
+
+<form action="">
+
+    <!--PRIMEIRA-->
+<div class="container-cartao">
+    <div class="cont-info">
+        <section class="info-idoso">
+            <h2>Dados do Idoso</h2>
+            <div class="cont-idoso">
+                <label for="">Nome completo:</label>
+                <input class="box-nome" type="text">
+            </div>
+
+            <div class="cont-idoso">
+                <label for="">Data de nascimento:</label>
+                <input class="box-nasc" type="date">
+            </div>
+
+            <div class="cont-idoso">
+                <label for="">Telefone:</label>
+                <input type="text" class="box-tel">
+            </div>
+
+            <div class="cont-idoso">
+                <label for=""> Número da CNH:</label>
+                <input class="box-cnh" type="text" placeholder= "Quando for condutor...">
+            </div>
+
+            <div class="cont-idoso">
+                <label for="">Validade CNH:</label>
+                <input class="box-val" type="date">
+            </div>
+            
+            <div class="cont-idoso">
+                <label for="">E-mail:</label>
+                <input class="box-email" type="text">
+            </div>
+
+            <div class="cont-sexo">
+                <label for="">Sexo:</label>
+                <div class="opcao-sex">
+
+                    <div class="masc">
+                        <input type="checkbox" class="boxsex" checked>
+                        <label for="">Masculino</label>
+                    </div>
+                    <div class="fem">
+                        <input type="checkbox" class="boxsex">
+                        <label for="">Feminino</label>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    <!--FIM PRIMEIRA-->
+
+    <!--ENDEREÇO-->
+        <section class="endereco">
+            <h2>Endereço</h2>
+            <div class="cont-end">
+                <label for="cep">CEP:</label>
+                <input type="text" class="box-cep" name="cep" id="cep_idoso" maxlength="8">
+            </div>
+
+            <div class="cont-end">
+                <label for="rua">Rua:</label>
+                <input type="text" class="box-rua" name="rua" id="rua_idoso">
+                </div>
+
+            <div class="cont-end">
+                <label for="">Número:</label>
+                <input type="text" name="numero" class="box-num">
+            </div>
+
+            
+            <div class="cont-end">
+                <label for="bairro">Bairro:</label>
+                <input type="text" class="box-bairro" name="bairro" id="bairro_idoso">
+            </div>
+
+            <div class="cont-end">
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="box-cidade" name="cidade" id="cidade_idoso">
+            </div>
+
+            <div class="cont-end">
+                <label for="estado">Estado:</label>
+                <input type="text" class="box-estado" name="estado" id="estado_idoso">
+            </div>
+        </section>
+    </div>
+
+    <!--FIM ENDEREÇO-->
+
+    <h2>Documentos necessários do idoso</h2>
+    <p class="p-info2">Selecione a imagem do documento em <strong>jpg</strong> ou<strong> png,</strong> ou pode ser arquivo em <strong>Pdf</strong> se preferir.</p>
+
+<div class="wrapper">
+    <div class="box">
+        <div class="input-bx">
+                <h2 class="upload-area-title">Upload File</h2>
+            <form action="">
+                <input type="file" id="upload1" accept=".jpg,.png,.pdf" hidden>
+                <label for="upload1" class="uploadlabel">
+                <span><img class="cloud" src="/icones/cloud-computing64.png" alt=""></span>
+                <p>Click aqui para carregar o arquivo</p>
+                </label>
+            </form>
+        </div>
+
+        <div id="filewrapper1">
+            <h3 class="uploaded">Upload Documentos</h3>
+        </div>
+        </div>
+</div>
+
+
+<!--INICIO REPRESENTANTE-->
+
+<section class="representante">
+    <div class="cont-opcoes">
+        <label class="lbl-rep" for=""> Você precisa de um Representante?</label>
+        <div class="opcoes2">
+            <div class="cont-escolha">
+                <input type="checkbox" class="box-esc" checked>
+                <label for="">Não</label>
+            </div>
+            <div class="cont-escolha">
+                <input type="checkbox" class="box-esc">
+                <label for="">Sim</label>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<h2 class="txt-rep">Informações do Representante:</h2>
+
+<div class="section-rep">
+        <div class="cont-info-rep">
+            <div class="info-rep">
+                <label for="">Nome completo:</label>
+                <input type="text" class="box-name-rep">
+            </div>
+
+            <div class="info-rep">
+                <label for="">E-mail:</label>
+                <input type="text" class="box-email-rep">
+            </div>
+
+            <div class="info-rep">
+                <label for="">Telefone:</label>
+                <input type="text" class="box-tel-rep">
+            </div>
+
+            <div class="info-rep">
+                <label for="">RG:</label>
+                <input type="text" class="box-rg-rep">
+            </div>
+
+            <div class="info-rep">
+                <label for="">Data expedição:</label>
+                <input type="date" class="box-exp-rep">
+            </div>
+
+            <div class="info-rep">
+                <label for="">UF:</label>
+                <input type="text" class="box-uf-rep">
+            </div>
+        </div>
+
+        <div class="container-cep-rep">
+            <form action="">
+                <div class="info-cep-rep">
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep_rep" id="cep_rep" maxlength="8">
+                </div>
+                <div class="info-cep-rep">
+                    <label for="cep">Rua:</label>
+                    <input type="text" name="rua_rep" id="rua_rep">
+                </div>
+                <div class="info-cep-rep">
+                    <label for="cep">Número:</label>
+                    <input type="text" name="numero" id="numero">
+                </div>
+                <div class="info-cep-rep">
+                    <label for="cep">Bairro:</label>
+                    <input type="text" name="bairro_rep" id="bairro_rep">
+                </div>
+                <div class="info-cep-rep">
+                    <label for="cep">Cidade:</label>
+                    <input type="text" name="cidade_rep" id="cidade_rep">
+                </div>
+                <div class="info-cep-rep">
+                    <label for="cep">Estado:</label>
+                    <input type="text" name="estado_rep" id="estado_rep">
+                </div>
+            </form>
+        </div>   
+
+</div>
+
+
+<h2 class="txt-representante">Documentos necessários do Representante</h2>
+<p class="p-info2">Selecione a imagem do documento em <strong>jpg</strong> ou<strong> png,</strong> ou pode ser arquivo em <strong>Pdf</strong> se preferir.</p>
+
+<div class="wrapper">
+    <div class="box">
+        <div class="input-bx">
+            <h2 class="upload-area-title">Upload File</h2>
+            <form action="">
+                <input type="file" id="upload2" accept=".jpg,.png,.doc,.pdf" hidden>
+                <label for="upload2" class="uploadlabel">
+                <span><img class="cloud" src="/icones/cloud-computing64.png" alt=""></span>
+                <p>Click aqui para carregar o arquivo</p>
+            </label>
+            </form>
+        </div>
+
+        <div id="filewrapper2">
+            <h3 class="uploaded">Upload Documentos</h3>
+        </div>
+    </div>
+</div>
+
+<!--INICIO REPRESENTANTE-->
+
+<h2 class="adicional-info">Informações adicionais para fins estatísticos:</h2>
+<p class="lbl-adc" for="">Assinalar a principal condição de utilização do cartão:</p>
+<ul class="ul-list">
+    <li><input type="checkbox" class="box-esc" checked>Na maioria das vezes como condutor.</li>
+    <li><input type="checkbox" class="box-esc">Na maioria das vezes como passageiro.</li>
+</ul>
+
+<p class="lbl-adc" for="">O veículo pertence a quem. Preencher mais de uma opção se for o caso:</p>
+<ul class="ul-list">
+    <li><input type="checkbox" class="box-esc" checked>Idoso.</li>
+    <li><input type="checkbox" class="box-esc">Familiar (marido/mulher, filhos ou irmãos).</li>
+    <li><input type="checkbox" class="box-esc">Familiar mais distante (tios, netos, primos, representante legal).</li>
+    <li><input type="checkbox" class="box-esc">Outros.</li>
+</ul>
+
+    <div class="cont-btn">
+        <button class="btn-env" type="submit" id="enviar">ENVIAR</button>
+        <button class="btn-limp" type="reset" id="limpar">LIMPAR</button>
+    </div>
+
+
+</div>
+
+
+
+</form>
+
+<!--FIM CARTÃO IDOSO-->

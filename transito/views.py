@@ -42,3 +42,7 @@ def lombadas(request):
 
 def sinalizacao(request):
     return render(request, 'transito/pages/sinalizacao.html')
+
+
+def cartaoidoso(request):
+    return render(request, 'transito/pages/cartaoidoso.html')
