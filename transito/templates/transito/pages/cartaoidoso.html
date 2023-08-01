@@ -1,3 +1,4 @@
+{% load static %}
 {% include 'transito\partials\head.html' %}
 
 <!--CARTÃO IDOSO-->
@@ -252,8 +253,11 @@
         <button class="btn-limp" type="reset" id="limpar">LIMPAR</button>
     </div>
 
-
 </div>
+
 </main>
+<script src="{% static 'transito/js/cartaoidoso.js' %}"></script>
+
 {% include 'transito\partials\footer.html' %}
+
 <!--FIM CARTÃO IDOSO-->
