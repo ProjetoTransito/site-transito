@@ -46,3 +46,7 @@ def sinalizacao(request):
 
 def cartaoidoso(request):
     return render(request, 'transito/pages/cartaoidoso.html')
+
+
+def vagas_especiais(request):
+    return render(request, 'transito/pages/vagas_especiais.html')

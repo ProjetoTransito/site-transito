@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+.container {
+    width: 1200px;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+.cont-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.btn-card {
+    width: auto;
+    margin: 10px;
+    background-color: #ffc118;
+}
+
+.link-card {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
