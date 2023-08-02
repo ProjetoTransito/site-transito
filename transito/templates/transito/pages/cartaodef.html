@@ -1,3 +1,4 @@
+{% load static %}
 {% include 'transito\partials\head.html' %}
 
 <body>
@@ -111,7 +112,7 @@
                 <form action="">
                     <input type="file" id="upload1" accept=".jpg,.png,.pdf" hidden>
                     <label for="upload1" class="uploadlabel">
-                    <span><img class="cloud" src="/icones/cloud-computing64.png" alt=""></span>
+                    <span><img class="cloud" src="{% static 'transito/imagens/cloud-computing64.png' %}" alt=""></span>
                     <p>Click aqui para carregar o arquivo</p>
                     </label>
                 </form>
@@ -236,7 +237,7 @@
                     <form action="">
                     <input type="file" id="upload2" accept=".jpg,.png,.pdf" hidden>
                     <label for="upload2" class="uploadlabel">
-                    <span><img class="cloud" src="/icones/cloud-computing64.png" alt=""></span>
+                    <span><img class="cloud" src="{% static 'transito/imagens/cloud-computing64.png' %}" alt=""></span>
                     <p>Click aqui para carregar o arquivo</p>
                     </label>
                     </form>
@@ -380,7 +381,7 @@
                 <form action="">
                     <input type="file" id="upload3" accept=".jpg,.png,.pdf" hidden>
                     <label for="upload3" class="uploadlabel">
-                    <span><img class="cloud" src="/icones/cloud-computing64.png" alt=""></span>
+                    <span><img class="cloud" src="{% static 'transito/imagens/cloud-computing64.png' %}" alt=""></span>
                     <p>Click aqui para carregar o arquivo</p>
                     </label>
                 </form>
