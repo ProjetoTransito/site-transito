@@ -15,4 +15,5 @@ urlpatterns = [
     path('sinalizacao/', views.sinalizacao, name='sinalizacao'),
     path('cartaoidoso/', views.cartaoidoso, name='cartaoidoso'),
     path('vagas_especiais/', views.vagas_especiais, name='vagas_especiais'),
+    path('cartaodef/', views.cartaodef, name='cartaodef')
 ]

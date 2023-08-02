@@ -50,3 +50,7 @@ def cartaoidoso(request):
 
 def vagas_especiais(request):
     return render(request, 'transito/pages/vagas_especiais.html')
+
+
+def cartaodef(request):
+    return render(request, 'transito/pages/cartaodef.html')

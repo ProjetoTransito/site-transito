@@ -1,0 +1,404 @@
+{% include 'transito\partials\head.html' %}
+
+<body>
+    <h1>Cartão Pessoa com Deficiência</h1>
+        <!--CAMPOS DE INFORMAÇÃO-->
+    <div id="container-informacao">
+        
+        <div class="container-dados">
+    
+            <div class="container-info">
+                <h2 class="subt-info">Dados do requerente</h2>
+                <div class="container-item">
+                    <label for="">Nome completo:</label>
+                    <input class="inp-info" type="text">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Data de Nascimento:</label>
+                    <input class="inp-info" type="date">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">E-mail:</label>
+                    <input class="inp-info" type="text">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">RG:</label>
+                    <input class="inp-info" type="text">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">CPF:</label>
+                    <input class="inp-info" type="text">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Data de expedição:</label>
+                    <input class="inp-info" type="date">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">CNH:</label>
+                    <input class="inp-info" type="text">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Data de expedição:</label>
+                    <input class="inp-info" type="date">
+                </div>
+    
+                <div class="cont-sexo">
+                    <label for="">Sexo:</label>
+                    <div class="opcao-sex">
+    
+                        <div class="masc">
+                            <input type="radio" class="boxsex"  name="sexo" value="M" checked>
+                            <label for="">Masculino</label>
+                        </div>
+                        <div class="fem">
+                            <input type="radio" class="boxsex" name="sexo" value="F" >
+                            <label for="">Feminino</label>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="container-endereco">
+                <h2 class="subt-info">Endereço</h2>
+                <div class="container-item">
+                    <label for="">CEP:</label>
+                    <input class="inp-endereco" type="text" name="cep" id="cep_def">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Rua:</label>
+                    <input class="inp-endereco" type="text" name="rua" id="rua_def">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Número:</label>
+                    <input class="inp-endereco" type="text">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Bairro:</label>
+                    <input class="inp-endereco" type="text" name="bairro" id="bairro_def">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Cidade:</label>
+                    <input class="inp-endereco" type="text" name="cidade" id="cidade_def">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Estado:</label>
+                    <input class="inp-endereco" type="text" name="estado" id="estado_def">
+                </div>
+    
+            </div>
+    </div>
+    
+        <h2 class="txt-deficiencia">Documentos necessários do Portador de deficiência</h2>
+        <p class="p-info-def">Selecione a imagem do documento em <strong>jpg</strong> ou<strong> png,</strong> ou pode ser arquivo em <strong>Pdf</strong> se preferir.</p>
+    <div class="container-wrap">
+        <div class="wrapper">
+            <div class="box">
+                <div class="input-bx">
+                <h2 class="upload-area-title">Documento do Idoso</h2>
+                <form action="">
+                    <input type="file" id="upload1" accept=".jpg,.png,.pdf" hidden>
+                    <label for="upload1" class="uploadlabel">
+                    <span><img class="cloud" src="/icones/cloud-computing64.png" alt=""></span>
+                    <p>Click aqui para carregar o arquivo</p>
+                    </label>
+                </form>
+                </div>
+    
+                <div id="filewrapper1">
+                    <h3 class="uploaded">Upload Documentos</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!--ESCOLHA REPRESENTANTE-->
+    
+    
+        <section class="representante">
+            <label class="lbl-rep" for=""> Você precisa de um Representante?</label>
+            <div class="cont-opcoes"> 
+                <div class="opcoes2">
+                    <div class="cont-escolha">
+                        <input type="radio" class="box-esc" id="nao" name="representante" value="nao" checked onclick="Mudarestado ('parte')" checked>
+                        <label for="">Não</label>
+                    </div>
+                    <div class="cont-escolha">
+                        <input type="radio" class="box-esc" id="sim" name="representante" value="sim" onclick="Mudarestado ('parte')">
+                        <label for="">Sim</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIM ESCOLHA REPRESENTANTE-->
+        <br>    
+        <br>
+        <hr>
+        <br>
+        <br>
+    
+        <!--REPRESENTANTE-->
+        <h2 class="txt-rep">Informações do Representante:</h2>
+    <div class="form-rep" id="parte" style="display: none;">
+        <div class="container-representante">
+            <div class="section-rep">
+            <h2 class="subt-info">Dados do Representante</h2>
+            <div class="container-item">
+                <label for="">Nome completo:</label>
+                <input class="inp-info" type="text">
+            </div>
+    
+            <div class="container-item">
+                <label for="">Data de Nascimento:</label>
+                <input class="inp-info" type="date">
+            </div>
+    
+            <div class="container-item">
+                <label for="">E-mail:</label>
+                <input class="inp-info" type="text">
+            </div>
+    
+            <div class="container-item">
+                <label for="">RG:</label>
+                <input class="inp-info" type="text">
+            </div>
+    
+            <div class="container-item">
+                <label for="">Data de expedição:</label>
+                <input class="inp-info" type="date">
+            </div>
+    
+            <div class="container-item">
+                <label for="">CNH:</label>
+                <input class="inp-info" type="text">
+            </div>
+    
+            <div class="container-item">
+                <label for="">Data de expedição:</label>
+                <input class="inp-info" type="date">
+            </div>
+        </div>
+    
+    
+            <div class="container-endereco">
+                <h2 class="subt-info">Endereço</h2>
+                <div class="container-item">
+                    <label for="">CEP:</label>
+                    <input class="inp-endereco" type="text"  name="cep" id="cep_rep">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Rua:</label>
+                    <input class="inp-endereco" type="text"  name="rua" id="rua_rep">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Número:</label>
+                    <input class="inp-endereco" type="text">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Bairro:</label>
+                    <input class="inp-endereco" type="text"  name="bairro" id="bairro_rep">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Cidade:</label>
+                    <input class="inp-endereco" type="text"  name="cidade" id="cidade_rep">
+                </div>
+    
+                <div class="container-item">
+                    <label for="">Estado:</label>
+                    <input class="inp-endereco" type="text"  name="estado" id="estado_rep">
+                </div>
+            </div>
+        
+        </div>
+    
+        <h2 class="txt-deficiencia">Documentos necessários do Representante</h2>
+        <p class="p-info-def">Selecione a imagem do documento em <strong>jpg</strong> ou<strong> png,</strong> ou pode ser arquivo em <strong>Pdf</strong> se preferir.</p>
+        <div class="wrapper">
+            <div class="box">
+                <div class="input-bx">
+                    <h2 class="upload-area-title">Documento representante</h2>
+                    <form action="">
+                    <input type="file" id="upload2" accept=".jpg,.png,.pdf" hidden>
+                    <label for="upload2" class="uploadlabel">
+                    <span><img class="cloud" src="/icones/cloud-computing64.png" alt=""></span>
+                    <p>Click aqui para carregar o arquivo</p>
+                    </label>
+                    </form>
+                </div>
+    
+            <div id="filewrapper2">
+                <h3 class="uploaded">Upload Documentos</h3>
+            </div>
+            </div>
+        </div>
+    </div>
+        
+        <!-- FIM REPRESENTANTE-->
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+    
+    
+        <!-- FIM CAMPOS DE INFORMAÇÃO-->
+    
+    
+        <h1 id="titulo-med"> Informações do Médico</h1>
+    
+        <div class="container-medico">
+            <div class="cont-info-med">
+                <div class="nome-medico">
+                    <div class="info-medico">
+                        <label for="">Nome do médico:</label>
+                        <input class="box-med" type="text">
+                    </div>
+    
+                    <div class="info-medico">
+                        <label for="">Endereço consultório\clínica:</label>
+                        <input class="box-med" type="text">
+                    </div>
+                </div>
+    
+                <div class="nome-medico">
+                    <div class="info-medico">
+                        <label for="">Registro profissional CRM:</label>
+                        <input class="box-med2" type="text">
+                    </div>
+    
+                    <div class="info-medico">
+                        <label for="">Telefone:</label>
+                        <input class="box-med2" type="text">
+                    </div>
+                </div>
+            </div>
+            
+        
+            
+    
+            <div class="cont-lista-amb">
+                <p id="medico-paragrafo"> <strong>O requerente possui deficiencia ambulatória causada por:</strong></p>
+                <ul id="def-ambulatorial">
+    
+                    <div class="cont-lista">
+                        <li class="lista-def"></li>
+                        <input class="check-def" type="checkbox">Deficiência física
+                    </div>
+        
+                    <div class="cont-lista">
+                        <li class="lista-def"></li>
+                        <input class="check-def" type="checkbox">Utiliza cadeira de rodas
+                    </div>
+        
+                    <div class="cont-lista">
+                        <li class="lista-def"></li>
+                        <input class="check-def" type="checkbox">Membros superiores
+                    </div>
+        
+                    <div class="cont-lista">
+                        <li class="lista-def"></li>
+                        <input class="check-def" type="checkbox">Aparelhagem ortopédica
+                    </div>
+        
+                    <div class="cont-lista">
+                        <li class="lista-def"></li>
+                        <input class="check-def" type="checkbox">Membros inferiores
+                    </div>
+        
+                    <div class="cont-lista">
+                        <li class="lista-def"></li>
+                        <input class="check-def" type="checkbox">Prótese
+                    </div>
+        
+                    <div class="cont-lista">
+                        <li class="lista-mental"></li>
+                        <input class="check-def" type="checkbox">Limitação autonoma decorrente de limitação cognitiva
+                    </div>
+            
+                    <div class="cont-lista">
+                        <li class="lista-ment"></li>
+                        <input class="check-def" type="checkbox">Dificuldade de locomoção com alto grau de comprometimento ambulatório
+                    </div>
+        
+                
+                </ul>
+            </div>
+    
+        </div>
+            
+            <div class="content-assinalar">
+            <strong><p id="assinalar">Qual o tempo de utilização do atestado médico? Periodo mínimo de 2 meses a 1 ano. <br>
+                Se permanente informar o periodo de inicio da validade do cartão com prazo de 5 anos.
+                </p></strong>
+            
+    
+                <ul id="tempo_def">
+    
+                    <div class="cont-lista">
+                        <li class="lista_tempo"></li>
+                        <input class="check-def" type="checkbox">Temporária
+                    </div>
+    
+    
+                    <div class="cont-lista">
+                        <li class="lista_tempo"></li>
+                        <input class="check-def" type="checkbox">Permanente
+                    </div>
+        
+                </ul>
+            </div>
+    
+    
+            <div class="content-textarea">
+                <h2 id="cid">Descrição e CID da lesão que justifique a incapacidade ou dificuldade ambular:</h2>
+                <textarea name="" id="text-cid" cols="30" rows="10" placeholder="Digite aqui..."></textarea>
+            </div>
+    
+        <h2 class="txt-deficiencia">Documentos necessários do Portador de deficiência</h2>
+        <p class="p-info-def">Selecione a imagem do documento em <strong>jpg</strong> ou<strong> png,</strong> ou pode ser arquivo em <strong>Pdf</strong> se preferir.</p>
+    
+        <div class="wrapper">
+            <div class="box">
+                <div class="input-bx">
+                <h2 class="upload-area-title">Documentos e atestados médicos</h2>
+                <form action="">
+                    <input type="file" id="upload3" accept=".jpg,.png,.pdf" hidden>
+                    <label for="upload3" class="uploadlabel">
+                    <span><img class="cloud" src="/icones/cloud-computing64.png" alt=""></span>
+                    <p>Click aqui para carregar o arquivo</p>
+                    </label>
+                </form>
+                </div>
+    
+                <div id="filewrapper3">
+                    <h3 class="uploaded">Upload Documentos</h3>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="cont-btn">
+        <button class="btn-env" type="submit" id="enviar">ENVIAR</button>
+        <button class="btn-limp" type="reset" id="limpar">LIMPAR</button>
+    </div>
+        
+    </body>
+
+{% include 'transito\partials\footer.html' %}
