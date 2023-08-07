@@ -33,7 +33,8 @@ input {
     font-size: 1.2rem;
     border: 2px solid #1A1A1B;
     border-radius: 5px;
-    text-indent: 10px
+    text-indent: 10px;
+    margin-bottom: 10px;
 }
 .p-info {
     margin-bottom: 1.5rem;
