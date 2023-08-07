@@ -1,6 +1,11 @@
-body {
-    background-color: #ccc;
-}
+
+ main {
+    background-color: #cccc;
+    width: 1200px;
+    padding: 30px 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+ }
 
 h1 {
     margin: 1rem auto;
