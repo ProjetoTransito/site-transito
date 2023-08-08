@@ -1,132 +1,48 @@
-
-body {
-    font-family: 'Roboto',sans-serif;
-}
-
-main {
-    background-color: #cccc;
-    width: 1200px;
-    padding: 30px 10px;
-    margin: 0 auto;
-    border-radius: 8px;
- }
+/*inicio deficiente*/
 
 h1 {
-    margin: 1rem auto;
-    font-family: 'Roboto',sans-serif;
+    margin: 2rem auto;
     text-align: center;
 }
-
-h2 {
-    text-align: center;
-    font-family: 'Roboto',sans-serif;
-}
-.p-info {
-    text-align: center;
-    font-family: 'Roboto',sans-serif;
-}
-
-label {
-    font-size: 1.2rem;
-    font-family: 'Roboto',sans-serif;
-}
-
-input {
-    width: 30rem;
-    height: 40px;
-    font-size: 1.2rem;
-    border: 2px solid #1A1A1B;
-    border-radius: 5px;
-    text-indent: 10px;
-    margin-bottom: 10px;
-}
-.p-info {
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-    font-family: 'Roboto',sans-serif;
-}
-
-
-
-.container-cartao {
-    margin: 0rem auto;
-    width: 80%;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: 'Roboto',sans-serif;
-}
-
-/*INFO IDOSO*/
-
-.cont-info {
+.container-dados {
     display: flex;
-    gap: 60px;
+    font-size: 1.2rem;
+    gap: 3rem;
     justify-content: center;
-    
 }
-
-.info-idoso {
+.container-item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
-    
 }
 
-.cont-idoso {
-    display: flex;
-    flex-direction: column;
-    margin-bottom:0.5rem;
-    
+.inp-info {
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 30rem;
+    border-radius: 5px;
 }
 
-.cont-sexo {
-    display: flex;
+.inp-endereco {
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 30rem;
+    border-radius: 5px;
 }
 
 .opcao-sex {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
-    gap: 1rem;
+    gap: 2rem;
 }
-
-.masc {
+.masc, .fem {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 0.2rem;
+    margin-bottom: 2rem;
 }
-.fem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.2rem;
-}
-
 
 .boxsex {
     width: 20px;
     height: 20px;
-}
-
-.endereco {
-    /*background-color: aqua;*/
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.cont-end {
-    display: flex;
-    flex-direction: column;
-    margin-bottom:0.5rem;;
-}
-
-.p-info2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
 }
 
 /*INPUT ARQUIVOS DOCUMENTOS*/
@@ -194,7 +110,6 @@ input {
     border: 1.5px solid #807f7f;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #807f7f;
-    
 }
 
 .showfilebox .left {
@@ -213,7 +128,6 @@ input {
     text-transform: capitalize;
     font-weight: 700;
     border-radius: 3px;
-    
 }
 
 .left h3 {
@@ -245,16 +159,20 @@ input {
 
 /* FIM INPUT ARQUIVOS DOCUMENTOS*/
 
-/*REPRESENTANTE*/
-
-.txt-rep{
-    margin-top: 2rem;
-    margin-bottom: 1.2rem;
-}
-
-
+/*fim deficiente*/
 
 /*ESCOLHA REPRESENTANTE*/
+
+.txt-rep {
+    text-align: center;
+}
+
+.representante {
+    text-align: center;
+    margin-bottom: 0.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
 
 .cont-opcoes {
     display: flex;
@@ -283,57 +201,114 @@ input {
 
 /* FIM ESCOLHA REPRESENTANTE*/
 
-/*FORM REPRESENTANTE*/
-
-.txt-representante {
-    margin-top: 1.2rem;
-}
-
-/*.section-rep {
+.container-representante {
     display: flex;
-    gap: 60px;
+    font-size: 1.2rem;
+    gap: 3rem;
     justify-content: center;
+    margin-bottom: 3rem;
 }
+/*informações medicas*/
 
-.info-rep {
+.cont-info-med {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
 }
 
-.info-cep-rep {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/*INFORMAÇÃOES ADCIONAIS*/
-
-.wrapper-info {
-    width: 550px;
-    margin: 0 auto;
-    padding-left: 35px;
-}
-
-.lbl-adc {
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.list-content {
-    margin-left: 2rem;
-    font-family: 'Roboto',sans-serif;
+.box-med {
+    width: 30rem;
     font-size: 1.2rem;
 }
 
-.ul-list {
-    list-style-type: none;
+.info-medico {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto'sans-serif;
+    font-size: 1.2rem;
     
 }
 
-/*FIM FORM REPRESENTANTE*/
+.box-med {
+    width: 30rem;
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
 
-.container-btn {
+.box-med2 {
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+#medico-paragrafo {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#def-ambulatorial {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+
+.cont-lista-amb {
+    width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.cont-lista {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.check-def {
+    width: 20px;
+    height: 20px;
+}
+
+.content-assinalar {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+#tempo_def {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.2rem;
+}
+
+.content-textarea {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+#text-cid {
+    width: 70%;
+    text-indent: 20px;
+    font-size: 1.2rem;
+    border-radius: 5PX;
+    resize: vertical;
+    font-family: 'Roboto',sans-serif;
+    margin-bottom: 1rem;
+}
+
+.txt-deficiencia, .p-info-def {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.cont-btn {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;

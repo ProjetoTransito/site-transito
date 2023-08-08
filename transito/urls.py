@@ -15,5 +15,5 @@ urlpatterns = [
     path('sinalizacao/', views.sinalizacao, name='sinalizacao'),
     path('cartao_idoso/', views.cartao_idoso, name='cartao_idoso'),
     path('vagas_especiais/', views.vagas_especiais, name='vagas_especiais'),
-    path('cartaodef/', views.cartaodef, name='cartaodef')
+    path('cartao_def/', views.cartao_def, name='cartao_def')
 ]
