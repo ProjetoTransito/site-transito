@@ -201,13 +201,18 @@ h1 {
 
 /* FIM ESCOLHA REPRESENTANTE*/
 
+
+
 .container-representante {
     display: flex;
     font-size: 1.2rem;
     gap: 3rem;
     justify-content: center;
     margin-bottom: 3rem;
+    display: flex ;
 }
+
+
 /*informações medicas*/
 
 .cont-info-med {
